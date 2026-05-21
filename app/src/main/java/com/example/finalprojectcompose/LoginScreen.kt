@@ -61,7 +61,7 @@ fun LoginScreen(onLoginClick: () -> Unit = {}) {
             )
 
             Spacer(modifier = Modifier.height(8.dp))
-
+       
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -78,7 +78,7 @@ fun LoginScreen(onLoginClick: () -> Unit = {}) {
                         .background(Color(0xFFFFFFFF).copy(alpha = 0.6f)),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "+972", fontSize = 12.sp, fontWeight = FontWeight.Medium, color = Black)
+                    Text(text = " +972", fontSize = 12.sp, fontWeight = FontWeight.Medium, color = Black)
                 }
                 OutlinedTextField(
                     value = phone,
@@ -101,7 +101,7 @@ fun LoginScreen(onLoginClick: () -> Unit = {}) {
             }
 
             Spacer(modifier = Modifier.height(16.dp))
-
+       
             Text(
                 text = "Sign in with Email",
                 fontSize = 12.sp,
@@ -130,12 +130,12 @@ fun LoginScreen(onLoginClick: () -> Unit = {}) {
                     append(" and ")
                     withStyle(SpanStyle(color = LinkBlue)) { append("privacy policy") }
                 },
-                fontSize = 13.sp,
+                fontSize = 12.sp,
                 color = Color(0xFF5B5B5B),
                 modifier = Modifier.fillMaxWidth()
             )
 
-            Spacer(modifier = Modifier.height(30.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
             Row(
                 modifier = Modifier.fillMaxWidth(),
