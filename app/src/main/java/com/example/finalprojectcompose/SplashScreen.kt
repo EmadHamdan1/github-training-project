@@ -15,7 +15,7 @@ import com.example.beautyapp.ui.BgLight
 import com.example.beautyapp.ui.RedMain
 
 @Composable
-fun SplashScreen() {
+fun SplashScreen() {          
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -25,7 +25,7 @@ fun SplashScreen() {
         Box(
             modifier = Modifier
                 .size(250.dp)
-                .shadow(elevation = 8.dp, shape = CircleShape)
+                .shadow(elevation = 10.dp, shape = CircleShape)
                 .clip(CircleShape)
                 .background(RedMain)
         ) {
