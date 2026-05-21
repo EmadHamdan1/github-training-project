@@ -64,7 +64,7 @@ fun ProductCard(product: Product, onClick: () -> Unit = {}) {
                         .padding(horizontal = 4.dp, vertical = 2.dp)
                         .align(Alignment.TopStart)
                 ) {
-                    Text(text = product.discount, fontSize = 12.sp, color = White)
+                    Text(text = product.discount, fontSize = 13.sp, color = White)
                 }
 
                 IconButton(
@@ -75,7 +75,7 @@ fun ProductCard(product: Product, onClick: () -> Unit = {}) {
                         imageVector = if (isFav) Icons.Filled.Favorite else Icons.Outlined.FavoriteBorder,
                         contentDescription = null,
                         tint = if (isFav) RedMain else TextGray,
-                        modifier = Modifier.size(18.dp)
+                        modifier = Modifier.size(19.dp)
                     )
                 }
             }
