@@ -22,7 +22,7 @@ import com.example.beautyapp.ui.components.*
 @Composable
 fun AccountScreen(onNavClick: (BottomNavItem) -> Unit = {}) {
     Scaffold(
-        topBar = { TopBar("Account") },
+        topBar = { TopBar(" Account ") },
         bottomBar = { BottomNavBar(selected = BottomNavItem.Account, onItemClick = onNavClick) }
     ) { padding ->
         Column(
@@ -32,7 +32,7 @@ fun AccountScreen(onNavClick: (BottomNavItem) -> Unit = {}) {
                 .padding(padding)
                 .padding(horizontal = 16.dp)
         ) {
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(15.dp))
 
             Row(
                 modifier = Modifier.fillMaxWidth(),
