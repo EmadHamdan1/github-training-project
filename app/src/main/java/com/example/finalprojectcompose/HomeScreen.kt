@@ -20,7 +20,7 @@ import com.example.beautyapp.ui.*
 import com.example.beautyapp.ui.components.*
 
 val sampleProducts = listOf(
-    Product("Device Laser Hair Rem...", "Qmele", "\$18", "\$20", "%20", "70 sold", "https://www.figma.com/api/mcp/asset/274ff8df-a410-460e-b6ef-24825880e61d"),
+    Product("Device Laser Hair Rem...", "Qmele ", "\$12", "\$20", "%20", "70 sold", "https://www.figma.com/api/mcp/asset/274ff8df-a410-460e-b6ef-24825880e61d"),
     Product("Device Laser Hair Rem...", "Qmele", "\$10", "\$15", "%33", "50 sold", "https://www.figma.com/api/mcp/asset/274ff8df-a410-460e-b6ef-24825880e61d"),
     Product("Device Laser Hair Rem...", "Qmele", "\$10", "\$15", "%50", "50 sold", "https://www.figma.com/api/mcp/asset/274ff8df-a410-460e-b6ef-24825880e61d"),
     Product("Device Laser Hair Rem...", "Qmele", "\$10", "\$15", "%33", "50 sold", "https://www.figma.com/api/mcp/asset/274ff8df-a410-460e-b6ef-24825880e61d"),
@@ -34,7 +34,7 @@ fun HomeScreen(onNavClick: (BottomNavItem) -> Unit = {}) {
         topBar = { TopBar("Good morning") },
         bottomBar = { BottomNavBar(selected = BottomNavItem.Home, onItemClick = onNavClick) }
     ) { padding ->
-        Column(
+        Column(  
             modifier = Modifier
                 .fillMaxSize()
                 .background(White)
